@@ -1,0 +1,44 @@
+﻿<%@ Master Language="VB" CodeFile="Homework.master.vb" Inherits="Homework" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        <div id="header">
+            
+            <h1>Assignment Tracker</h1>
+            <h2>Lucas Johnson's Homework Database</h2>
+            
+        <div id="navcontainer">
+            <ul id="navlist">
+                <li id="active">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Assignments</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </div>
+        </div>
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <div id="Footer">
+            &copy 2015 Lucas Johnson
+
+        </div>
+    </div>
+    </form>
+</body>
+</html>

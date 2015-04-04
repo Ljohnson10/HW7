@@ -1,0 +1,64 @@
+﻿body {
+    background-color:#8FC48D;
+    font-family:Arial, Calibri;
+}
+
+#header{
+    background-image: url(Images/Homework.jpg);
+    text-align:center;
+    background-repeat:no-repeat;
+    background-position:center;
+    
+}
+
+
+ul#navlist
+{
+margin-left: 0;
+padding-left: 0;
+white-space: nowrap;
+}
+
+#navlist li
+{
+display: inline;
+list-style-type: none;
+}
+
+#navlist a { padding: 3px 10px; }
+
+#navlist a:link, #navlist a:visited
+{
+color: white;
+background-color: #8FC48D;
+text-decoration: none;
+}
+
+#navlist a:hover
+{
+color: white;
+background-color: #0F4E0C;
+text-decoration: double;
+}
+
+h1{
+    color: #3E853A;
+    background-color:white;
+    margin-left:30%;
+    margin-right: 30%;
+   
+}
+h2{
+    color:#3E853A;
+    margin-left:30%;
+    margin-right:30%;
+    background-color:white;
+    margin-top: 0px;
+}
+#Footer{
+    color: white;
+    text-align:center;
+    font-size: 70%;
+
+    
+}
