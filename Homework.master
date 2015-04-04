@@ -19,9 +19,9 @@
             
         <div id="navcontainer">
             <ul id="navlist">
-                <li id="active">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Assignments</a></li>
+                
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="NewHW.aspx">New Assignment</a></li>
                 <li><a href="#">Search</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
