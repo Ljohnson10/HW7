@@ -22,12 +22,15 @@
                 
                 <li><a href="Default.aspx">Home</a></li>
                 <li><a href="NewHW.aspx">New Assignment</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="Search.aspx">Search</a></li>
+                <li><a href="About.aspx">About</a></li>
+                <li><a href="Contact.aspx">Contact</a></li>
                 
             </ul>
         </div>
+        </div>
+        <div id="Date">
+            <p>Today's date is: <asp:Label ID="lblDate" runat="server" Text="Label"></asp:Label></p>
         </div>
         
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">

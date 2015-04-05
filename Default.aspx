@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Homework.master" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Title="Home" Language="VB" MasterPageFile="~/Homework.master" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> Assignments
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <asp:SqlDataSource ID="HWData" runat="server" ConnectionString="<%$ ConnectionStrings:ljohnsonHW7 %>" DeleteCommand="DELETE FROM [ljohnsonHW7] WHERE [aID] = @aID" InsertCommand="INSERT INTO [ljohnsonHW7] ([Class], [Name], [Desription], [DueDate], [Completed]) VALUES (@Class, @Name, @Desription, @DueDate, @Completed)" SelectCommand="SELECT * FROM [ljohnsonHW7]" UpdateCommand="UPDATE [ljohnsonHW7] SET [Class] = @Class, [Name] = @Name, [Desription] = @Desription, [DueDate] = @DueDate, [Completed] = @Completed WHERE [aID] = @aID">
