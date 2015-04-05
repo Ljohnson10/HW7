@@ -28,7 +28,7 @@
             <asp:BoundField DataField="Name" HeaderText="Assignment Name" SortExpression="Name" />
             <asp:BoundField DataField="Class" HeaderText="Class" SortExpression="Class" />
             <asp:BoundField DataField="DueDate" HeaderText="Due Date" SortExpression="DueDate" />
-            <asp:BoundField DataField="Completed" HeaderText="Completed?" SortExpression="Completed" />
+            <asp:CheckBoxField DataField="Completed" HeaderText="Completed?" SortExpression="Completed" />
             <asp:HyperLinkField DataNavigateUrlFields="aID" DataNavigateUrlFormatString="Details.aspx?aID={0}" HeaderText="Details" Text="Select" />
         </Columns>
     </asp:GridView>
