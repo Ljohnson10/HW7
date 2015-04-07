@@ -16,7 +16,7 @@
 	        <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="./users.aspx">View & Edit Users</asp:HyperLink></li>
 	        <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="./add_user.aspx">Add New User</asp:HyperLink></li>
 	        <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="./users_by_role.aspx">View Users By Role</asp:HyperLink></li>
-            <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="/Admin/Default.aspx">Back To Home</asp:HyperLink></li>
+            <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/admin/Default.aspx">Back To Home</asp:HyperLink></li>
         </ul>
             <div style="clear:both;"></div>
         <div class="homeDiv">

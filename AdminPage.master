@@ -21,13 +21,13 @@
         <div id="navcontainer">
             <ul id="navlist">
                 
-                <li><a href="/Admin/Default.aspx">Home</a></li>
-                <li><a href="/Admin/NewHW.aspx">New Assignment</a></li>
-                <li><a href="/Admin/Search.aspx">Search</a></li>
-                <li><a href="/Admin/About.aspx">About</a></li>
-                <li><a href="/Admin/Contact.aspx">Contact</a></li>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="NewHW.aspx">New Assignment</a></li>
+                <li><a href="Search.aspx">Search</a></li>
+                <li><a href="About.aspx">About</a></li>
+                <li><a href="Contact.aspx">Contact</a></li>
                 <li><asp:LoginStatus ID="LoginStatus1" runat="server" LogoutPageUrl="~/Default.aspx" /></li>
-                <li><a href="/Admin/siteManger/default.aspx">Admin Tools</a></li>
+                <li><a href="siteManger/default.aspx">Admin Tools</a></li>
             </ul>
         </div>
         </div>
