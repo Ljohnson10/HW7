@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home" Language="VB" MasterPageFile="~/Homework.master" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Title="Home" Language="VB" MasterPageFile="~/AdminPage.master" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> 
 </asp:Content>
@@ -23,7 +23,7 @@
             <asp:Parameter Name="aID" Type="Int32" />
         </UpdateParameters>
 </asp:SqlDataSource>
-    <asp:GridView ID="GridView1" runat="server" DataSourceID="HWData" AutoGenerateColumns="False" AllowPaging="True" HorizontalAlign="Center">
+    <asp:GridView ID="GridView1" runat="server" DataSourceID="HWData" AutoGenerateColumns="False" AllowPaging="True" HorizontalAlign="Center" CssClass="cssgridview" AlternatingRowStyle-CssClass="alt">
         <Columns>
             <asp:BoundField DataField="Name" HeaderText="Assignment Name" SortExpression="Name" />
             <asp:BoundField DataField="Class" HeaderText="Class" SortExpression="Class" />

@@ -1,6 +1,7 @@
 ﻿body {
     background-color:#8FC48D;
     font-family:Arial, Calibri;
+    color:white;
 }
 
 #header{
@@ -91,4 +92,57 @@ h2{
   -moz-box-shadow: 0px 0px 0 #666;
   top: 5px;
   left: 5px;
+}
+.cssgridview{
+    width:80%;
+    border:solid 3px white;
+    border-collapse:collapse;
+    font-family:Arial;
+    color:white;
+    text-align:center;
+
+}
+.cssgridview th{
+    background-color:#3E853A;
+}
+.cssgridview .alt{
+    background-color:#3E853A;
+}
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.left{
+    background-color:#3E853A;
+    text-align:right;
+    color:white
+    
+}
+.right{
+    background-color:white;
+    color: #3E853A;
+}
+#mail{
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+#About{
+    margin-left:10%;
+    margin-right:10%;
+    color:white;
 }

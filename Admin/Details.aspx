@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Details" Language="VB" MasterPageFile="~/Homework.master" AutoEventWireup="false" CodeFile="Details.aspx.vb" Inherits="Details" %>
+﻿<%@ Page Title="Details" Language="VB" MasterPageFile="~/AdminPage.master" AutoEventWireup="false" CodeFile="Details.aspx.vb" Inherits="Details" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -31,10 +31,10 @@
         <EditItemTemplate>
             <table>
                 <tr>
-                    <td>
+                    <td class="left">
                         Class*:
                     </td>
-                    <td>
+                    <td class="right">
                         <asp:TextBox ID="tbClassName" runat="server" Text='<%# Bind("Class")%>' />
                     </td>
                     <td>
@@ -42,10 +42,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="left">
                         Name*:
                     </td>
-                    <td>
+                    <td class="right">
                         <asp:TextBox ID="tbAssignmentName" runat="server" Text='<%# Bind("Name")%>' />
                     </td>
                     <td>
@@ -53,14 +53,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Description:</td>
-                    <td><asp:TextBox ID="tbDesc" runat="server" Text='<%# Bind("Description")%>' Height="20px" Width="200px" /></td>
+                    <td class="left">Description:</td>
+                    <td class="right"><asp:TextBox ID="tbDesc" runat="server" Text='<%# Bind("Description")%>' Height="20px" Width="200px" /></td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="left">
                         Due Date (YYYY-MM-DD)*:
                     </td>
-                    <td>
+                    <td class="right">
                         <asp:TextBox ID="tbDueDate" runat="server" Text='<%# Bind("DueDate")%>' />
                     </td>
                     <td>
@@ -68,10 +68,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="left">
                         Completed?:
                     </td>
-                    <td>
+                    <td class="right">
                         <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%# Bind("Completed") %>' Enabled="true" />
                     </td>
                 </tr>
@@ -80,58 +80,58 @@
                *=Required Field
            </p>
             
-            <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-            &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+            <asp:Button ID="UpdateButton" class="searchBTN" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+            &nbsp;<asp:Button ID="UpdateCancelButton" class="searchBTN" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </EditItemTemplate>
         <InsertItemTemplate>
             
         </InsertItemTemplate>
         <ItemTemplate>
-            <table>
+          <table>
                 <tr>
-                    <td>
+                    <td class="left">
                         Class:
                     </td>
-                    <td>
-                        <asp:Label ID="tbClassName" runat="server" Text='<%# Bind("Class")%>' />
+                    <td class="right">
+                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("Class")%>' />
                     </td>
                     
                 </tr>
                 <tr>
-                    <td>
+                    <td class="left">
                         Name:
                     </td>
-                    <td>
-                        <asp:Label ID="tbAssignmentName" runat="server" Text='<%# Bind("Name")%>' />
+                    <td class="right">
+                        <asp:Label ID="Label2" runat="server" Text='<%# Bind("Name")%>' />
                     </td>
                     
                 </tr>
                 <tr>
-                    <td>Description:</td>
-                    <td><asp:Label ID="tbDesc" runat="server" Text='<%# Bind("Description")%>' Height="20px" Width="200px" /></td>
+                    <td class="left">Description:</td>
+                    <td class="right"><asp:Label ID="Label3" runat="server" Text='<%# Bind("Description")%>' Height="20px" Width="200px" /></td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="left">
                         Due Date (YYYY-MM-DD):
                     </td>
-                    <td>
-                        <asp:Label ID="tbDueDate" runat="server" Text='<%# Bind("DueDate")%>' />
+                    <td class="right">
+                        <asp:Label ID="Label4" runat="server" Text='<%# Bind("DueDate")%>' />
                     </td>
                     
                 </tr>
                 <tr>
-                    <td>
+                    <td class="left">
                         Completed?:
                     </td>
-                    <td>
-                        <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%# Bind("Completed") %>' Enabled="False" />
+                    <td class="right">
+                        <asp:CheckBox ID="CheckBox2" runat="server" Checked='<%# Bind("Completed") %>' Enabled="False" />
                     </td>
                 </tr>
             </table>
             
            
-            <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
-            &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
+            <asp:Button ID="EditButton" class="searchBTN" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
+            &nbsp;<asp:Button ID="DeleteButton" class="searchBTN" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
             
         </ItemTemplate>
     </asp:FormView>

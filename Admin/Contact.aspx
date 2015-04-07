@@ -1,9 +1,9 @@
-﻿<%@ Page Title="Contact" Language="VB" MasterPageFile="~/Homework.master" AutoEventWireup="false" CodeFile="Contact.aspx.vb" Inherits="Contact" %>
+﻿<%@ Page Title="Contact" Language="VB" MasterPageFile="~/AdminPage.master" AutoEventWireup="false" CodeFile="Contact.aspx.vb" Inherits="Contact" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div id="mail"><center>
+    <div><center>
             <br />
         
          <!-- Check to see if you are in postback.  If not, display the contact form. -->
@@ -22,7 +22,7 @@
         
         <br />
         <br />
-        <asp:Button ID="sendMail" class="searchBTN" runat="server" Text="Send" />
+        <asp:Button ID="sendMail" class="searchBTN" runat="server" Text="Send"  />
 
         
         <%Else%>
@@ -33,8 +33,6 @@
 
         
         <%End If%>
- </center>   
-        </div>
-
+    </center></div>
 </asp:Content>
 

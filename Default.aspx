@@ -23,13 +23,14 @@
             <asp:Parameter Name="aID" Type="Int32" />
         </UpdateParameters>
 </asp:SqlDataSource>
-    <asp:GridView ID="GridView1" runat="server" DataSourceID="HWData" AutoGenerateColumns="False" AllowPaging="True" HorizontalAlign="Center">
+    <asp:GridView ID="GridView1" runat="server" DataSourceID="HWData" AutoGenerateColumns="False" AllowPaging="True" HorizontalAlign="Center" CssClass="cssgridview" AlternatingRowStyle-CssClass="alt">
         <Columns>
             <asp:BoundField DataField="Name" HeaderText="Assignment Name" SortExpression="Name" />
             <asp:BoundField DataField="Class" HeaderText="Class" SortExpression="Class" />
             <asp:BoundField DataField="DueDate" HeaderText="Due Date" SortExpression="DueDate" />
             <asp:CheckBoxField DataField="Completed" HeaderText="Completed?" SortExpression="Completed" />
             <asp:HyperLinkField DataNavigateUrlFields="aID" DataNavigateUrlFormatString="Details.aspx?aID={0}" HeaderText="Details" Text="Select" />
+
         </Columns>
     </asp:GridView>
 

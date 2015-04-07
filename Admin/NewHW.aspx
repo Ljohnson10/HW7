@@ -1,4 +1,4 @@
-﻿<%@ Page Title="New Assignment" Language="VB" MasterPageFile="~/Homework.master" AutoEventWireup="false" CodeFile="NewHW.aspx.vb" Inherits="NewHW" %>
+﻿<%@ Page Title="New Assignment" Language="VB" MasterPageFile="~/AdminPage.master" AutoEventWireup="false" CodeFile="NewHW.aspx.vb" Inherits="NewHW" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -28,12 +28,12 @@
           
         </EditItemTemplate>
         <InsertItemTemplate>
-            <table>
+             <table>
                 <tr>
-                    <td>
+                    <td class="left">
                         Class*:
                     </td>
-                    <td>
+                    <td class="right">
                         <asp:TextBox ID="tbClassName" runat="server" Text='<%# Bind("Class")%>' />
                     </td>
                     <td>
@@ -41,10 +41,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="left">
                         Name*:
                     </td>
-                    <td>
+                    <td class="right">
                         <asp:TextBox ID="tbAssignmentName" runat="server" Text='<%# Bind("Name")%>' />
                     </td>
                     <td>
@@ -52,14 +52,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Description:</td>
-                    <td><asp:TextBox ID="tbDesc" runat="server" Text='<%# Bind("Description")%>' Height="20px" Width="200px" /></td>
+                    <td class="left">Description:</td>
+                    <td class="right"><asp:TextBox ID="tbDesc" runat="server" Text='<%# Bind("Description")%>' Height="20px" Width="200px" /></td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="left">
                         Due Date (YYYY-MM-DD)*:
                     </td>
-                    <td>
+                    <td class="right">
                         <asp:TextBox ID="tbDueDate" runat="server" Text='<%# Bind("DueDate")%>' />
                     </td>
                     <td>
@@ -67,10 +67,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="left">
                         Completed?:
                     </td>
-                    <td>
+                    <td class="right">
                         <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%# Bind("Completed") %>' Enabled="true" />
                     </td>
                 </tr>
@@ -78,7 +78,7 @@
            <p>
                *=Required Field
            </p>
-            <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Save" />
+            <asp:Button ID="InsertButton" class="searchBTN" runat="server" CausesValidation="True" CommandName="Insert" Text="Save" />
             
         </InsertItemTemplate>
         <ItemTemplate>
